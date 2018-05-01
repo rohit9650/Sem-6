@@ -9,7 +9,7 @@
 using namespace std;
 
 struct point{
-	double x, y, z, h;
+	int x, y, z, h;
 }*p;
 
 int npoints;
@@ -102,9 +102,9 @@ point * transformation3d(point *p)
 {
 	point *res = new point[npoints];
 	
-	double (*M)[4] = rotationZ;           // double for rotation (also un-somment below section) and float for overall scaling
+	int (*M)[4] = scaleX;           // double for rotation (also un-somment below section) and float for overall scaling
 	
-	
+	/*
 	
 	for(int i=0; i<4; i++){
 		for(int j=0; j<4; j++){
@@ -113,7 +113,7 @@ point * transformation3d(point *p)
 		cout<<endl;
 	}
 	
-	
+	*/
 	
 	for(int i=0; i<npoints; i++){
 		
