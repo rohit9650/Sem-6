@@ -73,7 +73,7 @@ point* transformation2d(point *p)
 {	
 	point *res = new point[npoints];
 	
-	int (*M)[3] = rotationAntiCLock;		//double for rotation
+	int (*M)[3] = scaleX;		//double for rotation uncomment below for rotation
 	
 	/* rotation matrix
 	for(int i=0; i<3; i++){
